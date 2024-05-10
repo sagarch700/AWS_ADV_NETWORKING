@@ -1,1 +1,7 @@
+subnet is AZ level
+when you create VPC & subnet aws would create a local router(comm b/w all subnets b/w vpc) & main route tables(common for all subnets).
+you can create custom route tables for a subnet, if you attach a custom route table then it won't look at main route table.
+EC2 insatnces are AZ level. so they are installed inside a AZ subnet.
+Network ACL operates at subnet level. since security groups cannot block based on IP CIDR block, use NACL.
+NACL is stateless and Security group is stateful.
 
