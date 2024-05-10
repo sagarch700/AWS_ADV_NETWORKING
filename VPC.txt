@@ -4,4 +4,8 @@ you can create custom route tables for a subnet, if you attach a custom route ta
 EC2 insatnces are AZ level. so they are installed inside a AZ subnet.
 Network ACL operates at subnet level. since security groups cannot block based on IP CIDR block, use NACL.
 NACL is stateless and Security group is stateful.
+NAT gateway provides only outbound initiated connection. for eg: server to install server packages, etc.
+NAT GW is AZ level. should be in public subnet. managed AWS service.
+
+
 
